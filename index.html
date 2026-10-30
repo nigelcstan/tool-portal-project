@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EE Tool Portal</title>
+  <script>
+    // Apply the saved theme before the page paints, so there is no flash of the wrong colours.
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="site-title" href="index.html">EE Tool Portal</a>
+      <button id="theme-toggle" type="button">Switch to dark theme</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Electrical Engineering tools</h1>
+    <p class="lead">Small tools you can try right in your browser. Pick one to get started.</p>
+
+    <div class="cards">
+      <a class="card" href="tools/tool-1.html">
+        <h2>Tool 1 &mdash; coming soon</h2>
+        <p>A placeholder for the first tool.</p>
+      </a>
+    </div>
+  </main>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
