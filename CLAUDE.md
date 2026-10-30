@@ -31,6 +31,7 @@ A portal where visitors try small web tools. Audience: students and learners. Su
 1. **Phase 1: portal + first tool.** The homepage, the light/dark toggle, and one tool: an Ohm's law calculator. The visitor enters any two of voltage, current, resistance and power, and gets the other two, with the formula shown.
    - [x] Step 1: portal homepage, light/dark toggle, and a placeholder "Tool 1 — coming soon" card that opens and returns via the navigation.
    - [x] Step 2: placeholder replaced with the real first tool, the Ohm's law calculator.
+   - [x] Step 3: visual design applied: blocky, playful pixel style (Press Start 2P for headings and buttons, Pixelify Sans for body text; sky, grass, dirt and stone colours; a night version for the dark theme). Colours live as variables in `css/styles.css`.
 2. **Phase 2: more tools.** To be decided after phase 1.
 
 ## Rules for Claude

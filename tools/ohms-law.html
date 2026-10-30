@@ -12,6 +12,8 @@
       }
     } catch (e) {}
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=Press+Start+2P&display=swap">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -50,7 +52,7 @@
           <span class="hint">Watts: how much energy is used each second.</span>
         </div>
       </div>
-      <button type="button" id="clear">Clear</button>
+      <button type="button" id="clear" class="secondary">Clear</button>
     </form>
 
     <div id="result" class="result" aria-live="polite">
@@ -66,6 +68,8 @@
       Combining these two rules lets you find any of the four values from any two of them.
     </p>
   </main>
+
+  <div class="ground" aria-hidden="true"></div>
 
   <script src="../js/theme.js"></script>
   <script src="../js/ohms-law.js"></script>

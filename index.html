@@ -12,6 +12,8 @@
       }
     } catch (e) {}
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=Press+Start+2P&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -23,16 +25,31 @@
   </header>
 
   <main class="wrap">
+    <div class="cloud" aria-hidden="true" style="top: 28px; right: 16px; width: 120px; height: 40px;"></div>
+    <div class="cloud" aria-hidden="true" style="top: 12px; right: 48px; width: 56px; height: 16px;"></div>
+    <div class="cloud" aria-hidden="true" style="top: 96px; right: 192px; width: 80px; height: 24px;"></div>
+
     <h1>DIY your smart home with AI tools</h1>
     <p class="lead">Small tools you can try right in your browser. Pick one to get started.</p>
 
     <div class="cards">
       <a class="card" href="tools/ohms-law.html">
+        <svg width="48" height="48" viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">
+          <rect x="6" y="0" width="3" height="2" fill="#E0A100"></rect>
+          <rect x="5" y="2" width="3" height="2" fill="#E0A100"></rect>
+          <rect x="4" y="4" width="3" height="2" fill="#E0A100"></rect>
+          <rect x="3" y="6" width="6" height="2" fill="#E0A100"></rect>
+          <rect x="6" y="8" width="2" height="2" fill="#E0A100"></rect>
+          <rect x="5" y="10" width="2" height="2" fill="#E0A100"></rect>
+        </svg>
         <h2>Ohm's law calculator</h2>
         <p>Enter any two of voltage, current, resistance and power, and get the other two.</p>
+        <span class="go">Open tool</span>
       </a>
     </div>
   </main>
+
+  <div class="ground" aria-hidden="true"></div>
 
   <script src="js/theme.js"></script>
 </body>
