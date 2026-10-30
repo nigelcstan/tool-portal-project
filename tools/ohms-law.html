@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ohm's law calculator - EE Tool Portal</title>
+  <script>
+    // Apply the saved theme before the page paints, so there is no flash of the wrong colours.
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="site-title" href="../index.html">EE Tool Portal</a>
+      <button id="theme-toggle" type="button">Switch to dark theme</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p><a href="../index.html">&larr; All tools</a></p>
+    <h1>Ohm's law calculator</h1>
+    <p class="lead">Fill in any two boxes. The calculator works out the other two.</p>
+
+    <form id="ohm-form" novalidate>
+      <div class="fields">
+        <div class="field">
+          <label for="v">Voltage (V)</label>
+          <input id="v" type="number" inputmode="decimal" step="any" min="0">
+          <span class="hint">Volts: the "push" that drives current through a circuit.</span>
+        </div>
+        <div class="field">
+          <label for="i">Current (I)</label>
+          <input id="i" type="number" inputmode="decimal" step="any" min="0">
+          <span class="hint">Amps: how much electric charge flows each second.</span>
+        </div>
+        <div class="field">
+          <label for="r">Resistance (R)</label>
+          <input id="r" type="number" inputmode="decimal" step="any" min="0">
+          <span class="hint">Ohms: how strongly something resists the flow.</span>
+        </div>
+        <div class="field">
+          <label for="p">Power (P)</label>
+          <input id="p" type="number" inputmode="decimal" step="any" min="0">
+          <span class="hint">Watts: how much energy is used each second.</span>
+        </div>
+      </div>
+      <button type="button" id="clear">Clear</button>
+    </form>
+
+    <div id="result" class="result" aria-live="polite">
+      <p>Enter two values to see the result.</p>
+    </div>
+
+    <h2>What is Ohm's law?</h2>
+    <p>
+      Ohm's law says that the voltage across something equals the current through it
+      multiplied by its resistance: <span class="formula">V = I &times; R</span>.
+      Power, the rate at which energy is used, is voltage times current:
+      <span class="formula">P = V &times; I</span>.
+      Combining these two rules lets you find any of the four values from any two of them.
+    </p>
+  </main>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/ohms-law.js"></script>
+</body>
+</html>

@@ -6,6 +6,7 @@
   --muted: #4a4a4a;
   --border: #c8c8c8;
   --link: #0b57d0;
+  --error: #a40000;
 }
 
 :root[data-theme="dark"] {
@@ -15,6 +16,7 @@
   --muted: #b8b8b8;
   --border: #444444;
   --link: #8ab4f8;
+  --error: #ff9b9b;
 }
 
 * {
@@ -109,4 +111,79 @@ h1 {
 .card p {
   margin: 0;
   color: var(--muted);
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* Calculator form: stacked on phones, two columns on wider screens. */
+.fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+}
+
+.field input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.hint {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.result p {
+  margin: 0.25rem 0;
+}
+
+.result dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.result dt {
+  font-weight: 700;
+}
+
+.result dd {
+  margin: 0;
+}
+
+.result.error {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+.formula {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+}
+
+@media (min-width: 40rem) {
+  .fields {
+    grid-template-columns: 1fr 1fr;
+  }
 }

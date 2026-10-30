@@ -6,9 +6,10 @@
 
 ## Project Structure
 - `index.html`: portal home page with a card for each tool
-- `tools/`: one HTML page per tool (currently only the placeholder `tool-1.html`)
+- `tools/`: one HTML page per tool (currently `ohms-law.html`)
 - `css/styles.css`: shared styles, including the light and dark theme colours
 - `js/theme.js`: light/dark toggle, shared by every page
+- `js/ohms-law.js`: logic for the Ohm's law calculator
 
 Update this section as files are added.
 
@@ -29,7 +30,7 @@ A portal where visitors try small web tools. Audience: students and learners. Su
 ### Phases
 1. **Phase 1: portal + first tool.** The homepage, the light/dark toggle, and one tool: an Ohm's law calculator. The visitor enters any two of voltage, current, resistance and power, and gets the other two, with the formula shown.
    - [x] Step 1: portal homepage, light/dark toggle, and a placeholder "Tool 1 — coming soon" card that opens and returns via the navigation.
-   - [ ] Step 2: replace the placeholder with the real first tool.
+   - [x] Step 2: placeholder replaced with the real first tool, the Ohm's law calculator.
 2. **Phase 2: more tools.** To be decided after phase 1.
 
 ## Rules for Claude
